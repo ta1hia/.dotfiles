@@ -7,6 +7,7 @@ done
 
 # Directory shortcuts
 alias lyrical='cd /home/tahia/work/LyricalSecurity'
+alias siem.cloud='lyrical && cd siem/siemphony.cloud.service && cd cloud'
 
 # Re-alias
 alias mkdir='mkdir -pv'
@@ -37,6 +38,3 @@ function gopath() { export GOPATH=`pwd`;}
 
 # start a shell in a running docker
 function dockerbash() { docker exec -i -t $1 /bin/bash; }
-
-# TEMPORARY
-alias tophat='cd /home/tahia/docs/interview/tophat'
