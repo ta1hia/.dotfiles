@@ -155,3 +155,28 @@ bar {
         status_command i3status
         tray_output primary
 }
+
+# tahia
+
+# trigger network manager icon in status bar
+exec --no-startup-id nm-applet
+
+# other applications to run at starttime
+exec --no-startup-id launchy
+#exec --no-startup-id dropbox start
+
+# screen lock
+bindsym Control+$mod+l exec i3lock
+
+# firefox
+bindsym $mod+i exec firefox
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+bindsym $mod-<F9> exec xbacklight -20%
+bindsym $mod-<F10> exec xbacklight +20%
+
+#bindsym XF86TouchpadToggle exec ~/.scripz/sh/toggle_touchpad.sh # toggle touchpad
