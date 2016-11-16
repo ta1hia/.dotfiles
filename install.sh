@@ -8,7 +8,8 @@
 
 dir=~/.dotfiles                    # dotfiles directory
 olddir=~/.dotfiles.bak             # old dotfiles backup directory
-files="bashrc bash_aliases"    # list of files/folders to symlink in homedir
+scripts=~/.scripz                   # scripts directory
+files="bashrc bash_aliases config/i3/config"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -22,6 +23,12 @@ echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
 
+# create scripts directory
+echo "Creating a scripts directory"
+mkdir $scripts/sh
+cp $dir/scripz/* $scripts/sh
+echo "...done"
+
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
@@ -29,3 +36,4 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
