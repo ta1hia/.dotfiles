@@ -162,7 +162,7 @@ bar {
 exec --no-startup-id nm-applet
 
 # other applications to run at starttime
-exec --no-startup-id launchy
+#exec --no-startup-id launchy
 #exec --no-startup-id dropbox start
 
 # screen lock
@@ -170,9 +170,6 @@ bindsym Control+$mod+l exec i3lock
 
 # firefox
 bindsym $mod+i exec firefox
-
-# nautilus
-bindsym $mod+n exec nautilus --no-desktop 
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
