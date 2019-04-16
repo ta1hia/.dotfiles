@@ -3,10 +3,10 @@
 # for examples
 
 # If not running interactively, don't do anything
-#case $- in
-#    *i*) ;;
-#      *) return;;
-#esac
+case $- in
+    *i*) ;;
+      *) return;;
+esac
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -34,10 +34,10 @@ shopt -s globstar
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+## Alias definitions.
+## You may want to put all your additions into a separate file like
+## ~/.bash_aliases, instead of adding them here directly.
+## See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -53,6 +53,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export LANG=en_US.UTF-8
+export LC_MESSAGES="C"
 
 # golang TODO
 export GOROOT=/usr/local/go
