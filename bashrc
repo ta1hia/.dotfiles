@@ -61,5 +61,5 @@ export LC_MESSAGES="C"
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 
-# source bash_profile
-source ~/.bash_profile
+export GOPATH=$HOME/dev/go
+export PATH=$PATH:$GOPATH/bin

@@ -5,7 +5,10 @@ for f in ~/.scripz/sh/*; do
     . $f
 done
 
-# Re-alias
+# Directories
+alias dev='cd $HOME/dev'
+
+# Re
 alias mkdir='mkdir -pv'
 alias top='htop'
 alias rm='rm -i'
@@ -18,7 +21,7 @@ alias l='LC_COLLATE=C ls -C'
 alias v='vim -p'
 alias dk='docker'
 alias bashrc='vim -p ~/.bash_aliases ~/.bashrc ~/.bash_profile'
-alias sbashrc='source ~/.bashrc'
+alias sbashrc='source ~/.bash_profile'
 alias prettyjson='python -m json.tool'
 
 # cd into a directory and call l
