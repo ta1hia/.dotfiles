@@ -57,7 +57,6 @@ fi
 export LANG=en_US.UTF-8
 export LC_MESSAGES="C"
 
-# golang TODO
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 

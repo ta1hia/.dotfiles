@@ -1,2 +1,2 @@
 # .dotfiles
-dotfiles
+nix dotfiles
