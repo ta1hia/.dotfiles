@@ -12,7 +12,7 @@ SCRIPT_DIR=~/.scripz                  # scripts directory
 
 # list of files/folders to symlink in homedir
 #CONFIG_FILES="bashrc bash_aliases config/i3/config config/i3/i3blocks.conf Xresources compton.conf config/dunst/dunstrc"
-CONFIG_FILES="bashrc bash_aliases vimrc"
+CONFIG_FILES="bashrc bash_profile bash_aliases vimrc tmux.conf config/user-dirs.dirs"
 
 ##########
 

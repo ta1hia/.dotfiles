@@ -57,8 +57,12 @@ fi
 export LANG=en_US.UTF-8
 export LC_MESSAGES="C"
 
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
+# prompt
+export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u\[$(tput setaf 5)\] \W \[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 
-# source bash_profile
-source ~/.bash_profile
+# golang
+# export GOROOT=$(dirname $(dirname $(readlink -f $(which go))))
+# export PATH=$PATH:$GOROOT/bin
+# export GOPATH=$HOME/dev/go
+# export PATH=$PATH:$GOPATH/bin
+# export GO111MODULE=on
