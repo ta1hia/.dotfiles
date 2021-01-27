@@ -185,4 +185,5 @@ bar {
 bindsym Control+$mod+l exec --no-startup-id i3lock -c 1c1919
 
 # firefox
-bindsym $mod+i exec --no-startup-id firefox
+bindsym $mod+i exec --no-startup-id chromium
+bindsym $mod+k exec --no-startup-id firefox
